@@ -7,3 +7,4 @@ results
 resources/genome*
 .snakemake
 .rmd_snakemake
+pelobates_genomes
