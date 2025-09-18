@@ -1,4 +1,5 @@
-cluster:
+executor: cluster-generic
+cluster-generic-submit-cmd:
   mkdir -p results/slurm_logs/{rule} &&
   sbatch
     --partition=amilan128c,amilan,csu
@@ -26,3 +27,39 @@ rerun-incomplete: True
 printshellcmds: True
 use-conda: True
 rerun-trigger: mtime
+cluster-generic-status-cmd: status-sacct-robust.sh
+cluster-generic-cancel-cmd: scancel
+cluster-generic-cancel-nargs: 4000
+
+
+set-threads:
+  map_reads: 8
+  realigner_target_creator: 4
+  genomics_db_import_chromosomes: 2
+  genomics_db_import_scaffold_groups: 2
+  genomics_db2vcf_scattered: 2
+  mark_duplicates: 8
+  clip_overlaps: 8
+
+
+set-resources:
+  map_reads:
+    mem_mb: 29920
+   mark_duplicates:
+    mem_mb: 29920
+  clip_overlaps:
+    mem_mb: 29920
+  make_gvcf_sections:
+    mem_mb: 3600
+  genomics_db_import_chromosomes:
+    mem_mb: 7480
+  genomics_db_import_scaffold_groups:
+    mem_mb: 11000
+  genomics_db2vcf_scattered:
+    mem_mb: 11000
+  multiqc_dir:
+    mem_mb: 37000
+  bwa_index:
+    mem_mb: 37000
+  realigner_target_creator:
+    mem_mb: 14960
