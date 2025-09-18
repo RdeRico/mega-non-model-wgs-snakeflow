@@ -12,7 +12,7 @@ cluster:
 default-resources:
   - time="08:00:00"
   - mem_mb=3740
-  - tmpdir="results/snake-tmp"
+  - tmpdir="scratch/alpine/c838048135@colostate.edu/pelobates_plasticity/results/snake-tmp"
 restart-times: 0
 max-jobs-per-second: 10
 max-status-checks-per-second: 50
@@ -31,27 +31,27 @@ cluster-cancel-nargs: 4000
 
 
 set-threads:
-  map_reads: 4
+  map_reads: 6
   realigner_target_creator: 4
   genomics_db_import_chromosomes: 2
   genomics_db_import_scaffold_groups: 2
   genomics_db2vcf_scattered: 2
 set-resources:
   map_reads:
-    mem_mb: 14960
+    mem_mb: 22440
     time: "'23:59:59'"
   make_gvcf_sections:
     mem_mb: 3600
-    time: "23:59:59"
+    time: "'23:59:59'"
   genomics_db_import_chromosomes:
     mem_mb: 7480
-    time: "23:59:59"
+    time: "'23:59:59'"
   genomics_db_import_scaffold_groups:
     mem_mb: 11000
-    time: "23:59:59"
+    time: "'23:59:59'"
   genomics_db2vcf_scattered:
     mem_mb: 11000
-    time: "23:59:59"
+    time: "'23:59:59'"
   multiqc_dir:
     mem_mb: 37000
   bwa_index:
