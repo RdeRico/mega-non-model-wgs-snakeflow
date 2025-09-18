@@ -65,5 +65,3 @@ set-resources:
     mem_mb: 37000
   bwa_index:
     mem_mb: 37000
-  realigner_target_creator:
-    mem_mb: 14960
