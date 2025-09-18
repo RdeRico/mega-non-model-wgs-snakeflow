@@ -45,7 +45,7 @@ set-threads:
 set-resources:
   map_reads:
     mem_mb: 29920
-   mark_duplicates:
+  mark_duplicates:
     mem_mb: 29920
   clip_overlaps:
     mem_mb: 29920
