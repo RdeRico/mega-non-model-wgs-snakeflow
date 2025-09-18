@@ -26,5 +26,3 @@ rerun-incomplete: True
 printshellcmds: True
 use-conda: True
 rerun-trigger: mtime
-cluster-generic-status-cmd: status-sacct-robust.sh
-cluster-generic-cancel-cmd: scancel
