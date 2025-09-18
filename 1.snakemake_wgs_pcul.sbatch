@@ -40,4 +40,4 @@ set -x
 source ~/.bashrc
 conda activate snakemake-7.7.0
 
-snakemake --profile hpcc-profiles/slurm/alpine --configfile example-configs/PCUL-Sep-2025/config.yaml --until get_ave_depths
+snakemake --profile hpcc-profiles/slurm/alpine --configfile example-configs/PCUL-sep-2025/config.yaml --until get_ave_depths
