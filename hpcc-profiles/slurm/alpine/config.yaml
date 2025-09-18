@@ -28,4 +28,3 @@ use-conda: True
 rerun-trigger: mtime
 cluster-generic-status-cmd: status-sacct-robust.sh
 cluster-generic-cancel-cmd: scancel
-cluster-generic-cancel-nargs: 4000
