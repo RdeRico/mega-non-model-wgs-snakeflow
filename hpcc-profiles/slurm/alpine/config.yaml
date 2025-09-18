@@ -26,9 +26,9 @@ rerun-incomplete: True
 printshellcmds: True
 use-conda: True
 rerun-trigger: mtime
-cluster-generic-status-cmd: status-sacct-robust.sh
-cluster-generic-cancel-cmd: scancel
-cluster-generic-cancel-nargs: 4000
+cluster-status: status-sacct-robust.sh
+cluster-cancel: scancel
+cluster-cancel-nargs: 4000
 
 
 set-threads:
