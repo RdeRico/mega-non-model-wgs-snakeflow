@@ -7,6 +7,9 @@ scatter_intervals_file: "example-configs/PCUL-sep-2025/scatters_5000000.tsv"
 # as different species, for indel realignment, etc.
 #indel_grps: ".test/config/igrps.tsv" 
 
+# this file is only needed if running dest_force_call
+force_call_vcf: ""
+
 # if you don't want to produce indel-realigned BAMs, set the
 # following to False
 do_indel_realignment: FALSE
