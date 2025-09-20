@@ -31,7 +31,12 @@ maf_cutoffs: [0.01]
 
 
 # We don't want to downsample BAMs for now, so set this to false. -Rafa-
-downsample_bams: false
+
+# to specify some downsampling levels to do you can put them in the
+# depths list here.
+downsample_bams:
+  depths: []
+  bqsr_round: 0
 
 # this next one is here just for quickly writing out rclone statements
 # to put the results back onto google drive.
