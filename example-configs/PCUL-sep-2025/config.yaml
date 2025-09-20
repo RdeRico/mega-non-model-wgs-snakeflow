@@ -30,6 +30,9 @@ bqsr_qd: 15
 maf_cutoffs: [0.01]
 
 
+# We don't want to downsample BAMs for now, so set this to false. -Rafa-
+downsample_bams: false
+
 # this next one is here just for quickly writing out rclone statements
 # to put the results back onto google drive.
 rclone_base: "BGP-SharePoint-ID:Genetic_and_Environmental_Data/Species_genetic_data/YEWA/snakemake-run-Jan-2023"
