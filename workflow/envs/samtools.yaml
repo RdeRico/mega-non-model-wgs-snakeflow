@@ -3,5 +3,4 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - samtools=1.15.1
-  - libdeflate>=1.13,<1.25
+  - samtools
