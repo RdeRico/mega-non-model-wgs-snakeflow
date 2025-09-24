@@ -3,4 +3,4 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - wget=1.21.3
+  - wget=1.21.4

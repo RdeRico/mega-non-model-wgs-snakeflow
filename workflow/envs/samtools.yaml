@@ -3,4 +3,6 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - samtools
+  - samtools=1.21
+  - htslib=1.21
+  - libdeflate=1.23
