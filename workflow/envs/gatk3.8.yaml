@@ -3,5 +3,5 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - gatk ==3.8
-  - wget ==1.21.3
+  - gatk=3.8
+  - wget=1.21.3

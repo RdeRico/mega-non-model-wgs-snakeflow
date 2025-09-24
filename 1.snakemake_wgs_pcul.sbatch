@@ -29,7 +29,7 @@
 #SBATCH --mail-type=END
 #################
 #who to send email to; please change to your email
-#SBATCH  --mail-user=rafael.rico@ebd.csic.es
+#SBATCH  --mail-user=rafa.ricomillan@colostate.edu
 #################
 #now run normal batch commands
 ##################
@@ -38,6 +38,6 @@
 set -x
 
 source ~/.bashrc
-conda activate snakemake-7.7.0
+conda activate snakemake8
 
 snakemake --profile hpcc-profiles/slurm/alpine --configfile example-configs/PCUL-sep-2025/config.yaml --until get_ave_depths
