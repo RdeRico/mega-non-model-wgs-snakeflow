@@ -4,3 +4,4 @@ channels:
   - defaults
 dependencies:
   - fastp=0.23.4
+  - libdeflate>=1.20,<1.25
